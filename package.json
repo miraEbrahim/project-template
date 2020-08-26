@@ -1,0 +1,33 @@
+{
+  "name": "mirajs",
+  "version": "1.0.0",
+  "description": "projects library and cookbooks in Arabic and English ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miraEbrahim/mirajs.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "javascript"
+  ],
+  "author": "Mira Ebrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miraEbrahim/mirajs/issues"
+  },
+  "homepage": "https://github.com/miraEbrahim/mirajs#readme",
+  "dependencies": {
+    "grunt-cli": "^1.3.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "jit-grunt": "^0.10.0"
+  }
+}
