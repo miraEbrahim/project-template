@@ -14,19 +14,23 @@ module.exports = function(grunt) {
           options: {
             compress: true,
             yuicompress: true,
+            sourcemap: true,
             optimization: 2
           },
           files: {
-            "css/main.css": "src/**/*.less" // destination file and source file
+            "css/main.css": "src/less/*.less" ,
+            "css/override.css": "src/sass/*.scss"
+            },
           }
-        }
-      },
+        },
+    
+      
       watch: {
         files: ['<%= jshint.files %>'],
         tasks: ['jshint'],
         styles: {
-            files: ['less/**/*.less'], // which files to watch
-            tasks: ['less'],
+            files: ['sass/*.scss',['less/*.less']],
+            tasks: [['sass'],['less/*.less']],
             options: {
               nospawn: true
             }
@@ -36,8 +40,6 @@ module.exports = function(grunt) {
   
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
-  
-    grunt.registerTask('default', ['jshint']);
     grunt.registerTask('default', ['less', 'watch']);
   
   };
