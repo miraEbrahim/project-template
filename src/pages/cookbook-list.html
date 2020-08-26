@@ -9,7 +9,7 @@
     <!-- Bootstrap core CSS -->
     <link href="/src/css/bootstrap.css"rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="/src/css/" rel="stylesheet">
+    <link href="/src/css/album.css" rel="stylesheet">
 
     <!-- fontawesome CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js">
@@ -22,7 +22,222 @@
 </head>
 
 <body >
-    
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-white">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <svg width="50" height="20" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M87.5468 20.9495C87.5468 21.3755 87.7288 21.8144 88.0928 22.2661C88.7649 23.0922 89.8359 23.5053 91.3059 23.5053C92.2019 23.5053 92.9929 23.3117 93.6789 22.9244L94.9389 25.8481C93.8469 26.3773 92.6359 26.6419 91.3059 26.6419C89.2059 26.6419 87.3438 25.932 85.7198 24.5121C84.6278 23.4795 84.0818 22.292 84.0818 20.9495C84.0818 20.8979 84.0818 20.8463 84.0818 20.7946C84.0818 18.3809 85.4188 16.6706 88.0928 15.6638L96.64 12.4303C96.64 11.2041 96.199 10.1779 95.3169 9.3518C94.4349 8.51279 93.3219 8.09328 91.9779 8.09328C90.8019 8.09328 89.7659 8.49988 88.8699 9.31308C88.0018 10.1005 87.5538 11.0944 87.5258 12.2948V12.5659L84.1658 13.9406V12.2367C84.1658 10.4296 85.0058 8.69995 86.6858 7.04774C88.1138 5.65369 89.9199 4.95667 92.1039 4.95667C94.2879 4.95667 96.15 5.6666 97.69 7.08647C99.23 8.50633 100 10.2231 100 12.2367V25.2866L96.64 26.6419V15.8187L89.7309 18.4131C88.2748 19.0456 87.5468 19.8911 87.5468 20.9495Z"fill="#ff4081"/>
+                    <path d="M62.3625 26.6419V12.2367C62.3625 10.2231 63.1326 8.50633 64.6726 7.08647C66.2126 5.6666 68.0746 4.95667 70.2587 4.95667C72.4847 4.95667 74.3537 5.6666 75.8657 7.08647C77.4198 8.55797 78.1968 10.2747 78.1968 12.2367V12.3142L74.8367 13.6695V12.2948C74.8087 11.0944 74.3607 10.1005 73.4927 9.31308C72.5967 8.49988 71.5397 8.09328 70.3217 8.09328C69.0476 8.09328 67.9626 8.49988 67.0666 9.31308C66.1706 10.1263 65.7226 11.1008 65.7226 12.2367C65.7226 12.2625 65.7226 12.2819 65.7226 12.2948V25.2866L62.3625 26.6419Z"fill="#ff4081"/>
+                    <path d="M42.5918 25.1048L46.2485 25.3642L45.459 26.7315C44.4328 28.5089 42.8781 29.6907 40.795 30.2769C38.712 30.863 36.7065 30.683 34.7786 29.7368C32.8507 28.7906 31.5627 27.3542 30.9146 25.4275C30.2665 23.5009 30.4556 21.6489 31.4819 19.8714L38.133 8.35207L41.7897 8.61141L34.4775 21.2759C33.8904 22.3476 33.7793 23.4191 34.1442 24.4902C34.5206 25.5962 35.3021 26.4403 36.4885 27.0226C37.5266 27.5321 38.6586 27.5905 39.8845 27.1979C41.1104 26.8052 42.0128 26.1075 42.5918 25.1048ZM40.1925 4.20831C39.9794 3.53345 40.0538 2.88269 40.4157 2.25602C40.7775 1.62935 41.3182 1.21477 42.0378 1.01228C42.764 0.798402 43.4608 0.85523 44.1281 1.18276C44.7955 1.5103 45.2357 2.01149 45.4487 2.68635C45.6683 3.34981 45.5972 3.99488 45.2354 4.62155C44.8735 5.24822 44.3295 5.66849 43.6034 5.88237C42.8838 6.08486 42.1903 6.02233 41.5229 5.6948C40.8556 5.36726 40.4121 4.87177 40.1925 4.20831Z"fill="#ff4081"/>
+                    <path d="M0 27.2366V10.8178C0 9.37213 0.560008 8.13297 1.68002 7.10034C2.80004 6.06771 4.15106 5.55139 5.73308 5.55139C7.3711 5.55139 8.72212 6.0548 9.78613 7.06161C10.9061 6.0548 12.2502 5.55139 13.8182 5.55139C15.4982 5.55139 16.8632 6.0548 17.9132 7.06161C18.9773 8.08134 19.5163 9.33986 19.5303 10.8372V25.8813L16.1702 27.2366L16.1912 10.9146C16.1912 10.2692 15.9602 9.72064 15.4982 9.26886C15.0362 8.81709 14.4902 8.5912 13.8602 8.5912C13.2022 8.5912 12.6422 8.81709 12.1802 9.26886C11.7042 9.73355 11.4662 10.2757 11.4662 10.8953V10.9146L11.4452 25.8813L8.08511 27.2366L8.10611 10.9146C8.10611 10.2692 7.87511 9.72064 7.4131 9.26886C6.95109 8.81709 6.40509 8.5912 5.77508 8.5912C5.13107 8.5912 4.57106 8.81709 4.09506 9.26886C3.61905 9.72064 3.38105 10.2692 3.38105 10.9146L3.36005 25.8813L0 27.2366Z"fill="#ff4081"/>
+                    <path d="M51.1046 37.7416C52.0017 37.7416 52.7426 37.4628 53.3273 36.9052C53.9119 36.329 54.2042 35.6877 54.2042 34.9814C54.2042 34.3587 53.9119 33.7686 53.3273 33.2109C52.7325 32.6533 51.9261 32.3513 50.908 32.3048C49.6581 32.2491 48.6652 31.9005 47.9293 31.2593C47.2136 30.6366 46.7852 29.7444 46.6441 28.5827C46.634 28.4991 46.629 28.4154 46.629 28.3318C46.6794 27.3188 47.1229 26.4173 47.9596 25.6273C48.8164 24.8002 49.8597 24.3866 51.0895 24.3866C52.3898 24.3866 53.4331 24.8002 54.2193 25.6273C54.7435 26.1849 55.1518 26.9238 55.4441 27.8438L53.2517 28.736C53.0904 28.1227 52.8434 27.6347 52.5108 27.2723C52.1378 26.8912 51.659 26.7007 51.0743 26.7007C50.5199 26.7007 50.0361 26.8912 49.6228 27.2723C49.2398 27.6254 49.0482 28.0251 49.0482 28.4712C49.0482 28.4898 49.0482 28.513 49.0482 28.5409C49.0482 28.987 49.2297 29.3727 49.5926 29.6979C49.9252 30.0046 50.4091 30.1905 51.0441 30.2556C52.798 30.4414 54.1437 30.9386 55.0812 31.7472C56.1094 32.658 56.6235 33.7686 56.6235 35.079V35.1208C56.6033 36.3662 56.1043 37.4814 55.1266 38.4665C54.0984 39.4888 52.7577 40 51.1046 40C49.522 40 48.2217 39.4981 47.2036 38.4944C46.0645 37.3885 45.4597 36.1431 45.3891 34.7583L45.374 34.6189L47.7933 33.6431L47.8084 34.7165C47.8185 35.5808 48.136 36.2964 48.7609 36.8634C49.4061 37.4489 50.1873 37.7416 51.1046 37.7416Z"fill="#ff4081"/>
+                    </svg></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse">
+                
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><div class=" gray">Home </div><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  gray">
+                  <a class="nav-link" href="#"><div class=" gray">Link</div></a>
+                </li>
+                
+              </ul>
+              <ul class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><div class="pink">Active</div></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><div class=" gray">Link</div></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><div class=" gray">Link</div></a>
+                </li>
+               
+              </ul>
+              
+            </div>
+        </div>
+          </nav>
+          
+       
+ 
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Hi...I am Mira</h1>
+      <p class="lead text-muted"> at Taggstar, I design and build social proof messaging and integrate our tags to the customer's tag manager.</p>
+      <!-- <p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+      </p> -->
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
 
 
     <script src="/src/js/jquery.min.js"></script>
