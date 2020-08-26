@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           files: {
             "css/main.css": "src/less/*.less" ,
             "css/override.css": "src/sass/*.scss"
-            },//
+            },
           }
         },
     
